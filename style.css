@@ -36,25 +36,27 @@ h1{
     background-color: #2c3e50;
 }
 
-.circle{
+.circle {
     position: relative;
     height: 45px;
     width: 45px;
     border-radius: 100%;
     background-color: #1d1d1d;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.circle.col1{
-    background-color: red;
-    box-shadow: 0 0 60px red;
+
+.circle.col1 {
+     background-color: #ff3e3e; 
+     box-shadow: 0 0 30px #ff3e3e; 
 }
 
-.circle.col2{
-    background-color: yellow;
-    box-shadow: 0 0 60px yellow;
+.circle.col2 {
+     background-color: #f1c40f;
+     box-shadow: 0 0 30px #f1c40f; 
 }
 
-.circle.col3{
-    background-color: green;
-    box-shadow: 0 0 60px green;
+.circle.col3 { 
+     background-color: #2ecc71; 
+     box-shadow: 0 0 30px #2ecc71; 
 }

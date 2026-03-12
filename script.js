@@ -1,18 +1,22 @@
-let circles=document.querySelectorAll('.circle'),
-light=0;
+let circles = document.querySelectorAll('.circle');
+let lightIndex = 0;
 
-setInterval(()=>{
+
+const colors = ['col1', 'col2', 'col3'];
+
+setInterval(() => {
     changeLight();
-},1000);
+}, 2000); 
 
-function changeLight(){
-    circles[light].classList='circle';
-    light++;
+function changeLight() {
+    
+    circles[lightIndex].classList.remove(colors[lightIndex]);
+    lightIndex++;
 
-    if(light>2){
-        light=0;
+ 
+    if (lightIndex > 2) {
+        lightIndex = 0;
     }
 
-    const selectLight=circles[light];
-    selectLight.classList.add(selectLight.getAttribute('color'));
+    circles[lightIndex].classList.add(colors[lightIndex]);
 }
